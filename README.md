@@ -12,6 +12,9 @@
 ## About The Project
 This project is a Sudoku game web application where users can play Sudoku and, if needed, solve the board using a backtracking algorithm. It also features a restart option that fetches a new random board via an API call to an online Sudoku board provider. The game logic is encapsulated in a Sudoku game class developed with Python, while the web server runs on Flask. The user interface is built with HTML and CSS, and JavaScript is used to track changes and inputs on the game board.
 
+### Demo
+<img src="https://github.com/sagi-vaknin/sudoku-solver/blob/d58d38c666da13248dfeffced0d06f306d692a6c/app_screenshot.png" alt="Example" width="300">
+<p> Randomly initialized Sudoku game demonstration </p>
 
 ### File Structure
 * app.py - Main Python file containing the application code, including routes, game logic, and rendering of HTML templates.
