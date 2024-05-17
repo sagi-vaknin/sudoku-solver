@@ -28,7 +28,7 @@ This project is a Sudoku game web application where users can play Sudoku and, i
 * CSS
 
 ## Contact
-Your Name - sagivak1@gmail.com <br>
+Sagi Vaknin - sagivak1@gmail.com <br>
 LinkedIn  - [Sagi Vaknin](https://www.linkedin.com/in/sagi-vaknin-sv) <br>
 Project Link: [https://github.com/sagi-vaknin/sudoku-solver](https://github.com/sagi-vaknin/sudoku-solver)
 
