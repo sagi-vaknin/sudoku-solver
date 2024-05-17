@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    border: 2px solid #333;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.row:nth-child(3n+3) .cell {
+    border-bottom: 2px solid #333;
+}
+
+.cell:nth-child(3n+3) {
+    border-right: 2px solid #333;
+}
+
+.solve-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.solve-btn:hover {
+    background-color: #45a049;
+}

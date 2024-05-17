@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+        <table id="grid" style="border-collapse: collapse;">
+            {% for row in sudoku_board %}
+            <tr class="row">
+                {% for value in row %}
+                    {% if value != 0 %}
+                        <td class="cell"><input type="text" maxlength="1" value="{{ value }}" disabled></td>
+                    {% else %}
+                        <td class="cell"><input type="text" maxlength="1"></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <form action="{{url_for('solve')}}" method="POST">
+            <input type="submit" class="solve-btn" value="Solve">
+        </form>
+        <form action="{{url_for('restart')}}" method="POST">
+            <input type="submit" class="solve-btn" value="Restart">
+        </form>
+    </div>
+</body>
+</html>
